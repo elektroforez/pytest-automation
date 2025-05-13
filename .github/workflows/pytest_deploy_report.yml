@@ -43,7 +43,7 @@ jobs:
           - name: Generate Allure report
             run: |
                 pip install allure-pytest
-                allure generate results -o allure-report --clean
+                allure generate reports -o allure-report --clean
 
           - name: Deploy report to Github Pages
             if: always()
