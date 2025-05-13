@@ -30,7 +30,7 @@ jobs:
 
           - name: Run tests
             run: |
-              pytest --browser_name=chromium -n auto --alluredir=allure-results
+              pytest --browser_name=chromium -n auto --alluredir=reports
 
           - name: Allure Report action from marketplace
             uses: simple-elf/allure-report-action@master
