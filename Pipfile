@@ -10,6 +10,7 @@ allure-pytest = "*"
 playwright = "*"
 exceptiongroup = "*"
 faker = "*"
+pytest-xdist = "*"
 
 [dev-packages]
 
