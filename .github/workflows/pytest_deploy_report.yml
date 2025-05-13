@@ -39,6 +39,7 @@ jobs:
               allure_results: reports
               allure_history: allure-history
               keep_reports: 20
+              subfolder: false
           - name: Deploy report to Github Pages
             if: always()
             uses: peaceiris/actions-gh-pages@v2
