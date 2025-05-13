@@ -9,6 +9,7 @@ chromium = "*"
 allure-pytest = "*"
 playwright = "*"
 exceptiongroup = "*"
+faker = "*"
 
 [dev-packages]
 
