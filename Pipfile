@@ -8,6 +8,7 @@ pytest = "*"
 chromium = "*"
 allure-pytest = "*"
 playwright = "*"
+exceptiongroup = "*"
 
 [dev-packages]
 
