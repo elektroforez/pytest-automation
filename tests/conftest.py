@@ -4,7 +4,6 @@ import pytest
 from playwright.sync_api import Playwright
 from pages.sing_up_page import SingUp
 from pages.header import Header
-from utils.dialog_consent import DialogConsent
 from data.fake_input_data import FakeInputData
 
 BASE_URL = "https://www.automationexercise.com"
@@ -29,8 +28,6 @@ def new_page(playwright: Playwright, request):
     context = browser.new_context()
     page = context.new_page()
     page.goto('https://www.automationexercise.com/')
-    contest = DialogConsent(page)
-    contest.accept()
     yield page
     browser.close()
 
